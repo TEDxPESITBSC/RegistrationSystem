@@ -206,6 +206,7 @@ def logout_user(request):
 
 	return redirect('login')
 
+@login_required(login_url='/')
 def csv_import(request):
 	context = {}
 
